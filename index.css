@@ -14,7 +14,8 @@
 @media {
     screen {
         background: gray;
-        display: block;
+        display: flex;
+        flex-direction: column;
         height: 0;
         position: relative;
     }
@@ -30,7 +31,6 @@
     @media (orientation: landscape) {
         screen {
             background: gray;
-            display: block;
             height: calc(100vh);
             width: calc(110vh);
         }
@@ -39,8 +39,7 @@
     @media (orientation: portrait) {
         screen {
             background: gray;
-            display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             height: 90vw;
             position: relative;
             width: 100%;
