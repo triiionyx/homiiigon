@@ -8,7 +8,6 @@
         text-align: center;
         text-transform: uppercase;
     }
-
 }
 
 @media {
@@ -27,13 +26,12 @@
         height: calc(100%/16);
         width: calc(100%/16);
     }
-    
-    @media (orientation: landscape) {
-        screen {
-            background: gray;
-            height: calc(100vh);
-            width: calc(110vh);
-        }
+
+    screen {
+        background: gray;
+        height: 100vh;
+        padding-right: 100vh;
+        width: 0;
     }
 
     @media (orientation: portrait) {

@@ -1,17 +1,37 @@
 @media {
-    screen > header {
-        
+    screen > matrix {
+        height: 100%;
+        position: absolute;
+        width: 100%;
     }
-    screen > header > picture:nth-child(1) {
-        margin: 5% auto 0;
+    
+    screen > matrix > header {
+        padding: 20px;
+    }
+    
+    screen > matrix > header > picture:nth-child(1) {
+        margin: 0 auto;
         width: calc(200%/3);
     }
     
-    screen > section {
-        margin: 50px 0;
+    screen > matrix > section {
+        align-items: center;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        margin: auto;
     }
     
-    screen > footer {
+    screen > matrix > section > text {
+        border: 1px solid;
+        border-radius: 50px;
+        font-family: sans-serif;
+        font-size: 24px;
+        line-height: 50px;
+        padding: 0 30px;
+    }
+    
+    screen > matrix > footer {
         bottom: 0;
         color: #080808;
         font-family: sans-serif;
@@ -19,12 +39,13 @@
         font-weight: bolder;
         height: 36px;
         left: 0;
-        position: absolute;
+        padding-top: 50px;
+        position: relative;
         text-align: center;
         width: 100%;
     }
     
-    screen > footer > picture:nth-child(1) {
+    screen > matrix > footer > picture:nth-child(1) {
         margin: 5% auto 0;
         width: calc(200%/3);
     }

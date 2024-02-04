@@ -1,13 +1,20 @@
 @media {
-    screen > header {
+    screen > matrix {
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+    
+    screen > matrix > header {
         padding: 20px;
     }
-    screen > header > picture:nth-child(1) {
+    
+    screen > matrix > header > picture:nth-child(1) {
         margin: 0 auto;
         width: calc(200%/3);
     }
     
-    screen > section {
+    screen > matrix > section {
         align-items: center;
         display: flex;
         flex: 1;
@@ -15,7 +22,7 @@
         margin: auto;
     }
     
-    screen > section > text {
+    screen > matrix > section > text {
         border: 1px solid;
         border-radius: 50px;
         font-family: sans-serif;
@@ -24,7 +31,7 @@
         padding: 0 30px;
     }
     
-    screen > footer {
+    screen > matrix > footer {
         bottom: 0;
         color: #080808;
         font-family: sans-serif;
@@ -38,7 +45,7 @@
         width: 100%;
     }
     
-    screen > footer > picture:nth-child(1) {
+    screen > matrix > footer > picture:nth-child(1) {
         margin: 5% auto 0;
         width: calc(200%/3);
     }
