@@ -22,8 +22,11 @@
     }
 
     pixel {
+        border: 1px solid;
+        box-sizing: border-box;
         display: inline-flex;
-        outline: 1px black;
+        .: 1px
+        black;
         height: 10%;
         width: 10%;
     }
