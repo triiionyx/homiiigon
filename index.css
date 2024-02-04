@@ -1,12 +1,50 @@
 @media {
     body {
+        align-items: center;
         color: white;
+        display: flex;
+        justify-content: center;
         margin: 0;
     }
 
     @media (prefers-color-scheme: dark) {
         body {
             background: black;
+        }
+    }
+}
+
+@media {
+    screen {
+        background: gray;
+        display: block;
+        height: 0;
+    }
+
+    pixel {
+        display: inline-flex;
+        outline: 1px black;
+        height: 10%;
+        width: 10%;
+    }
+    
+    @media (orientation: landscape) {
+        screen {
+            background: gray;
+            display: block;
+            height: calc(100vh);
+            width: calc(100vh);
+        }
+    }
+
+    @media (orientation: portrait) {
+        screen {
+            background: gray;
+            display: flex;
+            flex-wrap: wrap;
+            height: 100vw;
+            position: relative;
+            width: 100%;
         }
     }
 }
