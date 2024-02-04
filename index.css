@@ -1,17 +1,14 @@
 @media {
     body {
         align-items: center;
-        color: white;
+        color: black;
         display: flex;
+        font-weight: bolder;
         justify-content: center;
-        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
     }
 
-    @media (prefers-color-scheme: dark) {
-        body {
-            background: black;
-        }
-    }
 }
 
 @media {
