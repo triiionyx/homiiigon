@@ -22,7 +22,7 @@
     }
 
     pixel {
-        border: 1px solid;
+        border: 1px solid rgba(255,255,255,0.11255);
         box-sizing: border-box;
         display: inline-flex;
         .: 1px
