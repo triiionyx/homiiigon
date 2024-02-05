@@ -5,14 +5,13 @@
         display: flex;
         font-weight: bolder;
         justify-content: center;
-        text-transform: uppercase;
     }
 }
 
 @media {
-    screen {
+    main {
         background: gray;
-        display: block;
+        display: flex;
         height: 0;
         position: relative;
         height: calc(100vh);
@@ -20,43 +19,27 @@
     }
 
     @media (orientation: portrait) {
-        screen {
-            height: calc(100vw);
+        main {
+            height: calc(90vw);
             width: calc(100vw);
         }
     }
 
-    pixel {
-        /* border: 1px solid rgba(0,0,0,0.5); */
-        box-sizing: border-box;
-        display: inline-flex;
-        height: calc(100%/16);
-        width: calc(100%/16);
-    }
-
-    matrix {
-        display: inline-flex;
-        flex-wrap: wrap;
-        height: calc(100%/9);
-        position: relative;
-        width: 10%;
-    }
-
     @media {
-        screen > matrix > block {
-            border: 2px solid;
-            border-radius: 10px;
+        main > game {
             display: flex;
+            flex: 1;
             flex-direction: column;
             font-family: Arial;
             font-size: 24px;
+            justify-content: space-between;
             gap: 20px;
-            margin: 10px;
+            margin: 0;
             padding: 20px;
-            width: calc(200%/3);
+            text-align: center;
         }
 
-        screen > matrix > block > header {
+        main > game > header {
             display: flex;
             flex-direction: column;
             font-family: Arial;
@@ -66,16 +49,17 @@
             padding: 0;
         }
 
-        screen > matrix > block > footer {
-            margin-top: 100px;
+        main > game > section > a {
+            border: 1px solid #333;
+            border-radius: 50px;
+            color: #111;
+            display: block;
+            line-height: 50px;
+            padding: 0 10px;
         }
-    }
 
-    matrix {
-        display: inline-flex;
-        flex-wrap: wrap;
-        height: calc(100%/9);
-        position: relative;
-        width: 10%;
+        main > game > footer {
+            font-size: 16px;
+        }
     }
 }
